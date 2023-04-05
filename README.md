@@ -1,1 +1,1 @@
-A small demo of Unesco Word Heritage locations map, made with Folium
+A small demo of the Unesco World Heritage locations map, made with Folium
