@@ -30,4 +30,4 @@ for i, r in places.iterrows():
         color=color,
         tooltip=r.site).add_to(map)
 
-map.save("places.html")
+map.save("index.html")
