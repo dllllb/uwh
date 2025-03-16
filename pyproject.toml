@@ -1,0 +1,37 @@
+[project]
+name = "uwh"
+version = "0.1.0"
+readme = "README.md"
+description = "A small demo of the Unesco World Heritage locations map, made with Foliumt"
+requires-python = ">=3.10"
+dependencies = [
+    "folium",
+    "pandas",
+    "numpy<2.2.4",
+]
+
+[dependency-groups]
+dev = [
+    "pylint",
+    "jupyter",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint]
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "B",  # flake8-bugbear
+] 
